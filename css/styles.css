@@ -1100,7 +1100,7 @@ h2 {
   border-radius: 4px;
   padding-left: 16px;
   box-shadow: 0 4px 4px 0 var(--grey-0-15);
-  transition-property: border-color;
+  transition-property: border-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1113,6 +1113,7 @@ h2 {
 .newsletter-text:focus-within {
   border-color: var(--blue-color);
   outline: var(--blue-color);
+  box-shadow: var(--blue-color);
 }
 .newsletter-button {
   width: 200px;
