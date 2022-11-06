@@ -910,10 +910,6 @@ h2 {
   fill: var(--blue-color);
 }
 
-.name {
-  /* position: absolute; */
-}
-
 .input {
   position: absolute;
   display: flex;
@@ -988,20 +984,63 @@ h2 {
   color: var(--primary-half-color);
 }
 
-.regulations a {
-  text-decoration: underline;
-  color: var(--blue-color);
-}
+/* checkbox */
 
 .regulations {
+  position: relative;
   display: flex;
-  gap: 8px;
-  padding-top: 25px;
 
-  /* flex-direction: row; */
+  cursor: pointer;
+  line-height: 171%;
+}
 
-  /* display: inline-block; */
-  /* align-items: center; */
+
+
+.checkbox {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.checkmark-style {
+  position: absolute;
+  visibility: hidden;
+  /* width: 16px;
+  height: 15px;
+  fill-opacity: 1;
+  padding: 4px 2px 3px 3px;
+  border-radius: 2px;
+  border: 1px solid var(--secondary-black) */
+}
+
+
+
+.checkbox-action {
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+}
+
+.checkbox:checked + .checkbox-action .unchecked-box {
+  visibility: hidden;
+}
+.checkbox:checked + .checkbox-action .checkmark-style {
+  visibility: visible;
+  width: 16px;
+  height: 15px;
+  fill: var(--secondary-color);
+  background-color: var(--blue-color);
+  padding: 4px 2px 3px 3px;
+  border-radius: 2px;
+}
+
+.statement {
+  padding-left: 8px;
+}
+
+.politicy {
+  text-decoration: underline;
+  color: var(--blue-color);
 }
 
 .send-button {
@@ -1017,7 +1056,7 @@ h2 {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   padding: 10px 76px;
-  margin: 34px auto;
+  margin: auto;
   margin-bottom: 0;
 }
 
