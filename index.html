@@ -411,7 +411,11 @@
           <h4 class="newsletter-title">Zapisz się do newslettera</h4>
           <form class="newsletter-style">
             <label for="user_email">
-              <input class="newsletter-text" type="text" id="user_emial" placeholder="E-mail"
+              <input
+                class="newsletter-text"
+                type="text"
+                id="user_email"
+                placeholder="E-mail"
             /></label>
             <button class="newsletter-button" type="submit">
               Zapisz się
@@ -442,8 +446,8 @@
                 <use href="./images/icons.svg#icon-modal-person"></use></svg
               ><input
                 class="data-input"
-                type="username"
-                name="username"
+                type="name"
+                name="name"
                 id="user_name"
             /></label>
           </fieldset>
@@ -479,13 +483,8 @@
             </label>
           </fieldset>
 
-          <label class="regulations">
-            <input
-              class="checkbox "
-              type="checkbox"
-              name="regulations"
-              id=""
-            />
+          <label class="regulations" for="user_agree">
+            <input class="checkbox" type="checkbox" name="regulations" id="user_agree" />
             <span class="checkbox-action"
               ><svg class="checkmark-style" width="11px" height="8px">
                 <use href="./images/icons.svg#icon-modal-checked"></use></svg
@@ -493,11 +492,11 @@
                 <use href="./images/icons.svg#icon-unchecked"></use>
               </svg>
 
-              <p class="statement">
+              <span class="statement">
                 Oświadczam iż akceptuję
                 <a class="politicy" href="#">Regulamin</a> i
                 <a class="politicy" href="#">Politykę prywatności.</a>
-              </p>
+              </span>
             </span>
           </label>
           <button class="send-button" type="submit">Wyślij</button>
