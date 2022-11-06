@@ -999,6 +999,7 @@ h2 {
 
   cursor: pointer;
   line-height: 171%;
+  
 }
 
 .checkbox {
@@ -1010,6 +1011,7 @@ h2 {
 .checkmark-style {
   position: absolute;
   visibility: hidden;
+  
   /* width: 16px;
   height: 15px;
   fill-opacity: 1;
@@ -1022,6 +1024,7 @@ h2 {
   display: flex;
   align-items: center;
   padding-left: 13px;
+  
 }
 
 .checkbox:checked + .checkbox-action .unchecked-box {
