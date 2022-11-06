@@ -410,8 +410,8 @@
         <div class="newsletter">
           <h4 class="newsletter-title">Zapisz się do newslettera</h4>
           <form class="newsletter-style">
-            <label for="">
-              <input class="newsletter-text" type="text" placeholder="E-mail"
+            <label for="user_email">
+              <input class="newsletter-text" type="text" id="user_emial" placeholder="E-mail"
             /></label>
             <button class="newsletter-button" type="submit">
               Zapisz się
@@ -437,57 +437,69 @@
         <form class="inputs">
           <fieldset class="input-frame">
             <div class="input-title name">Imię</div>
-            <label class="input" for="username">
+            <label class="input" for="user_name">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-person"></use></svg
               ><input
                 class="data-input"
                 type="username"
                 name="username"
-                id="username"
+                id="user_name"
             /></label>
           </fieldset>
 
           <fieldset class="input-frame">
             <div class="input-title">Telefon</div>
-            <label class="input" for="phone">
+            <label class="input" for="user_phone">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-phone"></use></svg
-              ><input class="data-input" type="tel"
+              ><input class="data-input" type="tel" id="user_phone"
             /></label>
           </fieldset>
 
           <fieldset class="input-frame">
             <div class="input-title">Email</div>
-            <label class="input" for="">
+            <label class="input" for="user_email">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-mail"></use></svg
-              ><input class="data-input" type="email"
+              ><input class="data-input" type="email" id="user_email"
             /></label>
           </fieldset>
 
           <fieldset class="comment-frame">
             <div class="input-title">Komentarz</div>
-            <label class="text-input" for="">
+            <label class="text-input" for="user_comment">
               <textarea
                 class="comment"
-                name=""
-                id=""
+                name="comment"
+                id="user_comment"
                 cols="30"
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
           </fieldset>
 
-          <label class="regulations"
-            ><svg width="16" height="15">
-              <use href="./images/icons.svg#icon-modal-checked"></use></svg
-            ><input type="checkbox" name="regulations" id="" />
-            <p>
-              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-              <a href="#">Politykę prywatności.</a>
-            </p></label
-          >
+          <label class="regulations">
+            <input
+              class="checkbox "
+              type="checkbox"
+              name="regulations"
+              id=""
+            />
+            <span class="checkbox-action"
+              ><svg class="checkmark-style" width="11px" height="8px">
+                <use href="./images/icons.svg#icon-modal-checked"></use></svg
+              ><svg class="unchecked-box" width="16px" height="15px">
+                <use href="./images/icons.svg#icon-unchecked"></use>
+              </svg>
+
+              <p class="statement">
+                Oświadczam iż akceptuję
+                <a class="politicy" href="#">Regulamin</a> i
+                <a class="politicy" href="#">Politykę prywatności.</a>
+              </p>
+            </span>
+          </label>
           <button class="send-button" type="submit">Wyślij</button>
         </form>
       </div>
