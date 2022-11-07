@@ -910,13 +910,12 @@ h2 {
 .input-frame:focus-within {
   border-color: var(--blue-color);
   fill: var(--blue-color);
-  box-shadow: var(--blue-color);
+  box-shadow: 0 0 0 0 var(--blue-color);
 }
 
 .input {
   position: absolute;
   display: flex;
-
   gap: 12px;
   padding: 11px 12px;
 
@@ -958,7 +957,7 @@ h2 {
 .comment-frame:hover,
 .comment-frame:focus-within {
   border-color: var(--blue-color);
-  box-shadow: var(--blue-color);
+  box-shadow: 0 0 0 0 var(--blue-color);
 }
 
 .text-input {
@@ -999,7 +998,6 @@ h2 {
 
   cursor: pointer;
   line-height: 171%;
-  
 }
 
 .checkbox {
@@ -1011,7 +1009,7 @@ h2 {
 .checkmark-style {
   position: absolute;
   visibility: hidden;
-  
+
   /* width: 16px;
   height: 15px;
   fill-opacity: 1;
@@ -1024,7 +1022,6 @@ h2 {
   display: flex;
   align-items: center;
   padding-left: 13px;
-  
 }
 
 .checkbox:checked + .checkbox-action .unchecked-box {
@@ -1066,7 +1063,7 @@ h2 {
   margin-bottom: 0;
 }
 
-/* ==========modal window end======================== */
+/* ==========modal window inputs end======================== */
 
 /* ==================END BACKDROP==================== */
 
@@ -1116,7 +1113,7 @@ h2 {
 .newsletter-text:focus-within {
   border-color: var(--blue-color);
   outline: var(--blue-color);
-  box-shadow: var(--blue-color);
+  box-shadow: 0 0 0 0 var(--blue-color);
 }
 .newsletter-button {
   width: 200px;
@@ -1137,9 +1134,3 @@ h2 {
   border: none;
   /* padding: 10px 28px 42px 10px; */
 }
-
-/* .newsletter-send {
-  fill: black
-  padding: 13px 28px 13px 24px;
-
-} */
