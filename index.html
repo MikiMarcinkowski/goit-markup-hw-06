@@ -58,7 +58,7 @@
     </header>
 
     <main>
-      <div class="descryption">
+      <section class="descryption">
         <div class="container">
           <h1 class="main-header-title">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
@@ -67,7 +67,7 @@
             Zamów usługę
           </button>
         </div>
-      </div>
+      </section>
 
       <section class="section">
         <div class="container section1-style">
@@ -413,9 +413,10 @@
             <label for="user_email">
               <input
                 class="newsletter-text"
-                type="text"
+                type="email"
                 id="user_email"
                 placeholder="E-mail"
+                required
             /></label>
             <button class="newsletter-button" type="submit">
               Zapisz się
@@ -444,7 +445,12 @@
             <label class="input" for="user_name">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-person"></use></svg
-              ><input class="data-input" type="text" name="name" id="user_name"
+              ><input
+                class="data-input"
+                type="text"
+                name="name"
+                id="user_name"
+                required
             /></label>
           </fieldset>
 
@@ -453,7 +459,7 @@
             <label class="input" for="user_phone">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-phone"></use></svg
-              ><input class="data-input" type="tel" id="user_phone"
+              ><input class="data-input" type="tel" id="user_phone" required
             /></label>
           </fieldset>
 
@@ -462,11 +468,14 @@
             <label class="input" for="user_mail">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-modal-mail"></use></svg
-              ><input class="data-input" type="email" id="user_mail"
+              ><input class="data-input" type="email" id="user_mail  " required
             /></label>
           </fieldset>
 
-          <fieldset class="comment-frame">
+          <fieldset
+            class="comment-frame"
+            title="Napisz, co dokładnie Cię interesuje "
+          >
             <div class="input-title">Komentarz</div>
             <label class="text-input" for="user_comment">
               <textarea
@@ -479,12 +488,17 @@
             </label>
           </fieldset>
 
-          <label class="regulations" for="user_agree">
+          <label
+            class="regulations"
+            for="user_agree"
+            title="aby przesłać formularz, musisz wyrazić zgodę"
+          >
             <input
               class="checkbox"
               type="checkbox"
               name="regulations"
               id="user_agree"
+              required
             />
             <span class="checkbox-action"
               ><svg class="checkmark-style" width="11px" height="8px">
